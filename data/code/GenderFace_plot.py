@@ -10,26 +10,11 @@ from tensorflow.keras import layers, applications, models, preprocessing, callba
  # img 별로 수정
  WIDTH, HEIGHT = 121, 170
 
-# In[]
-def get_input(path):
-  from skimage import io
-  img = io.imread(path)
-
-  return img
-
-def preprocess_input(image):
-  image = np.uint8(np.round(transform.resize(image, (HEIGHT, WIDTH), preserve_range=True)))
-  image = preprocessing.image.img_to_array(image)
-  image = np.expand_dims(image, axis=0)
-  image = applications.vgg16.preprocess_input(image)
-
-  return image
-
 images = glob.glob('/Users/suzykwak/Desktop/gender_face/man/face_0.jpg')
 images.sort()
 
 # In[]
-BATCH_SIZE=1
+BATCH_SIZE = 1
 
 for num in range(1):
     # 순서대로 x 중심좌표, y 중심좌표, width 길이, height 길이 (0~1 사이로 normalization)
