@@ -16,37 +16,20 @@ from scipy import io
 from tensorflow.keras import layers, applications, models, preprocessing, callbacks, optimizers, backend
 import cv2
 
-# In[]
-def get_input(path):
-  from skimage import io
-  img = io.imread(path)
-
-  return img
-
-def preprocess_input(image):
-  image = np.uint8(np.round(transform.resize(image, (HEIGHT, WIDTH), preserve_range=True)))
-  image = preprocessing.image.img_to_array(image)
-  image = np.expand_dims(image, axis=0)
-  image = applications.vgg16.preprocess_input(image)
-
-  return image
-
-
 #jpg 파일 받아오기 - 파일 확장명으로 바꾸면 됨!!
 
 images = glob.glob('/content/*.jpg')
 images.sort()
 
-
 # In[]
-BATCH_SIZE=1
+BATCH_SIZE = 1
 
 for num in range(len(images)):
     # 순서대로 x 중심좌표, y 중심좌표, width 길이, height 길이 (0~1 사이로 normalization)
     annots_coord = [0.5, 0.5, 1, 1]
 
     #추가 -> glob 데이터 하나씩 받아오기
-    img=Image.open(images[num])
+    img = Image.open(images[num])
     WIDTH,HEIGHT=img.size
 
     # annots_x, annots_y: bounding box 중심 좌표
