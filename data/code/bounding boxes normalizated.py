@@ -15,6 +15,7 @@ import glob
 from scipy import io
 from tensorflow.keras import layers, applications, models, preprocessing, callbacks, optimizers, backend
 import cv2
+from PIL import Image
 
 # In[]
 def get_input(path):
