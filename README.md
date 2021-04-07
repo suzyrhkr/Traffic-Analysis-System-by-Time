@@ -20,6 +20,6 @@ Edge Computing을 이용한 딥러닝 기반 마케팅 타겟 검출 및 분석 
 
 ## Member
 * [김연우](https://github.com/Yeonwoo-Kim)
-* [곽수지](https://githttps://github.com/suzyrhkr)
+* [곽수지](https://github.com/suzyrhkr)
 * [신우정](https://github.com/Hannah-SWJ)
 * [이채원](https://github.com/chae52)
