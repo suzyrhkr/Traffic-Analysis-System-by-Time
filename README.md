@@ -25,5 +25,5 @@ Edge Computing을 이용한 딥러닝 기반 마케팅 타겟 검출 및 분석 
 * [이채원](https://github.com/chae52)
 
 ## Reference
--Pascal VOC2007, CelebA : https://github.com/luiszeni/sibgrapi2018_gender_detection
+-Pascal VOC2007, CelebA : https://github.com/luiszeni/sibgrapi2018_gender_detection <br>
 -Gender Detection : https://github.com/balajisrinivas/Gender-Detection
