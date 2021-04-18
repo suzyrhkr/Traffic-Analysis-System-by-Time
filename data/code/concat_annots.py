@@ -25,7 +25,7 @@ for i in range(len(ex_path)):
     ex_txt = open(ex_path[i], 'r')
     new_txt = open(new_path[i], 'r')
 
-    # concat된 각 text file 경로
+    # concat된 각 text file 저장 경로
     path = des_path + ex_path[i].split('.')[0].split('/')[-1] + '.txt'
     des_f = open(path, 'w')
 
