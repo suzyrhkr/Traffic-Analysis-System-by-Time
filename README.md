@@ -1,21 +1,25 @@
-<h3 align="center">2021 Sejong Capstone Design</h3>
+<h3 align="center">2021-1 Sejong Capstone Design</h3>
 <p align="center">
-  :balloon:Traffic-Analysis-System-by-Time:balloon:
+  Traffic-Analysis-System-by-Time
 </p>
 
 * * *
 
 ## Description
-Edge Computing을 이용한 딥러닝 기반 마케팅 타겟 검출 및 분석 시스템
+Edge Computing을 이용한 딥러닝 기반 마케팅 타겟 검출 및 분석 시스템   
+(Deep Learning Based
+ Marketing Target Detection and Analysis System Using Edge Computing)
+
+[YouTube](https://www.youtube.com/watch?v=mAHCIUk_rTk)
+
 
 
 ## Our purpose
 
 * 광고판 앞 보행자 Detection/Tracking 시스템 개발
-* 네트워크 최적화 - Channel Pruning, Quantization
-* App 개발 - Real-Time 보행자 분석 및 시각화 자료 제공
+* YOLO v3 검출기 경량화 (Channel Pruning, Quantization-aware Training)
+* Web 서비스 개발 - 실시간 광고판 앞 보행자 분석 및 시각화 자료 제공
 * (Option) 보행자별 맞춤 광고 추천 시스템
-
 
 
 ## Member
